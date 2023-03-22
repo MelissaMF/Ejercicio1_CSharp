@@ -9,17 +9,9 @@ class Program
         private string nombre;
         private int edad;
 
-        public string Nombre
-        {
-            get { return nombre; }
-            set { nombre = value; }
-        }
-
-        public int Edad
-        {
-            get { return edad; }
-            set { edad = value; }
-        }
+        public string Nombre { get; set; }
+        public int Edad { get; set; }
+       
 
         public virtual void mostrar()
         {
@@ -31,12 +23,8 @@ class Program
     {
         private int sueldo_bruto;
 
-        public int SueldoBruto
-        {
-            get { return sueldo_bruto; }
-            set { sueldo_bruto = value; }
-        }
-
+        public int SueldoBruto { get; set; }
+      
         public override void mostrar()
         {
             Console.WriteLine("El empleado se llama {0}, tiene {1}, años y su sueldo bruto es de {2}", Nombre, Edad, SueldoBruto);
@@ -52,12 +40,8 @@ class Program
     {
         private int telefono_de_contacto;
 
-        public int TelefonoDeContacto
-        {
-            get { return telefono_de_contacto; }
-            set { telefono_de_contacto = value; }
-        }
-
+        public int TelefonoDeContacto { get; set; }
+     
         public override void mostrar()
         {
             Console.WriteLine("El cliente se llama {0}, tiene {1} años y su número de teléfono es {2}", Nombre, Edad, TelefonoDeContacto);
